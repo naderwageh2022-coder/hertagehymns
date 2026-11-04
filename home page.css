@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.container button{
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    transition: 0.3s;
+}
+
+.container a{
+    text-decoration: none;
+    color: #0f172a;
+}
+
+.container h3{
+    line-height: 50px;
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 55px;
+    margin-left: 220px;
+}
+
+h4{
+    margin-top: 15px;
+    font-size: 22px;
+    color: #cbd5e1;
+    margin-left: 220px;
+}
+
+h2{
+    margin-top: 30px;
+    line-height: 1.6;
+    margin-left: 220px;
+}
+
+button{
+    margin-top: 30px;
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 35px;
+    background: #2563eb;
+    transition: 1.0s;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:hover {
+    background: gold;
+    color: goldenrod;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+input{
+    width: 450px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-decoration: dashed;
+    text-align: center;
+}
+
+input::placeholder{
+    color: gray;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid gold;
+    border-radius: 100%;
+}
+.hymn-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 250px;
+}
+.cover {
+    border-radius: 8px;
+    margin-right: 15px;
+}
+.song-info {
+    flex-grow: 1;
+    color: white;
+}
+.song-title { font-weight: bold; font-size: 16px; }
+.song-sub { font-size: 12px; color: #ccc; }
+.play-btn {
+    background: gold;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+.fixed-audio-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid gold; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 20px;
+    box-shadow: 0 -5px 25px rgba(0,0,0,0.3);
+    z-index: 9999; 
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    margin-left: 220px;
+    margin-right: 10px;
+}
+
+.current-hymn-details {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+
+.custom-audio {
+    width: 35%;
+}
+
+
+.bar-buttons {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.button-link, .button-fav {
+    color: gold; 
+    border: 1px solid gold;
+    padding: 10px 18px;
+    border-radius: 12px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; 
+    margin: 20px;
+}
+
+
+.button-link:hover {
+    background: gold;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 217, 0, 0.5);
+}
+
+
+.video-btn {
+    border-color: #ff4757;
+    color: #ff4757;
+    background: rgba(255, 71, 87, 0.15);
+}
+.video-btn:hover {
+    background: #ff4757;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+
+
+.button-fav {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ff4757;
+    border-color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+.button-fav:hover {
+    background: #ff4757;
+    color: white;
+    border-color: #ff4757;
+    transform: scale(1.1); 
+}
+.buttonlight{
+    background: darkslategrey;
+    border-style: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 1400px;
+}
+.buttonlight:hover {
+    background: white;
+    color: goldenrod;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+.img3{
+    width: 400px;
+    height: 400px;
+    border: none;
+    border-radius: 0%;
+}
+.title2{
+    color: gold;
+    text-align: center;
+    margin-right: 100px;
+}
+@media (max-width: 992px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        padding: 15px;
+    }
+
+    h1,
+    h2,
+    h4 {
+        margin-left: 0;
+    }
+
+    .hymn-item {
+        margin: 10px;
+    }
+
+    .fixed-audio-bar {
+        margin: 0;
+        border-radius: 0;
+        padding: 12px;
+    }
+
+    input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .custom-audio {
+        width: 50%;
+    }
+
+    .buttonlight {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        padding-bottom: 180px;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .container button {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 20px 0;
+    }
+
+    h2,
+    h4 {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    input {
+        width: 95%;
+        max-width: 320px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .img3 {
+        width: 220px;
+        height: auto;
+    }
+
+    .hymn-item {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .cover {
+        width: 100px;
+        height: auto;
+        margin: 0 0 10px;
+    }
+
+    .song-info {
+        margin-bottom: 10px;
+    }
+
+    .bar-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .button-link,
+    .play-btn,
+    button {
+        width: 100%;
+        max-width: 280px;
+        margin: 5px auto;
+    }
+
+    .button-fav {
+        width: 45px;
+        height: 45px;
+    }
+
+    .fixed-audio-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .current-hymn-details {
+        justify-content: center;
+    }
+
+    .custom-audio {
+        width: 100%;
+    }
+
+    .buttonlight {
+        width: 45px;
+        height: 45px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .title2 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2,
+    h4 {
+        font-size: 16px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .img3 {
+        width: 180px;
+    }
+
+    .song-title {
+        font-size: 15px;
+    }
+
+    .song-sub {
+        font-size: 12px;
+    }
+
+    .fixed-audio-bar {
+        padding: 8px;
+    }
+}

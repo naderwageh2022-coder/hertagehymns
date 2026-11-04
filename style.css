@@ -1,0 +1,135 @@
+body{
+  background: black;
+    text-align: center;
+}
+img{
+     width: 400px; 
+}
+h5{
+    color: gold;
+}
+h1{
+    color: white;
+    font-size: 80px;
+}
+h2{
+    color: gold;
+}
+p{
+    color: gold;
+    font-size: 20px;
+}
+h4{
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    background: gold;
+    width: 200px;
+    border-style: none;
+    border-radius: 15px;
+}
+a{
+    color: gold;
+}
+h3{
+    color: black;
+}
+.img3{
+    width: 200px;
+    height: 200%;
+}
+@media (max-width: 992px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    img {
+        width: 300px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .img3 {
+        width: 170px;
+        height: auto;
+    }
+
+    p,
+    h4 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h4,
+    p {
+        font-size: 17px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .img3 {
+        width: 140px;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h4,
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    .img3 {
+        width: 120px;
+        height: auto;
+    }
+
+    button {
+        width: 95%;
+    }
+}

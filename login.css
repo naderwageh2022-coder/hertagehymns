@@ -1,0 +1,65 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    input {
+        width: 90%;
+        max-width: 320px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 320px;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #error {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    input,
+    button {
+        width: 95%;
+    }
+
+    button {
+        padding: 14px;
+    }
+
+    #error {
+        font-size: 14px;
+    }
+}

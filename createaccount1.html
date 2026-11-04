@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="createaccount1.css">
+    <title>Create Account</title>
+</head>
+<body>
+<br>
+<br>
+
+<h1>صفحة انشاء الحساب </h1>
+
+<br>
+<br>
+
+<input type="text" id="theuserName" placeholder="اسم المستخدم">
+
+<br>
+<br>
+
+<input type="password" id="password" placeholder="انشاء كلمة مرور">
+
+
+<br>
+<br>
+
+<input type="password" id="confirmPassword" placeholder="تأكيد كلمة المرور ">
+
+<br>
+<br>
+
+<button onclick="createAccount()">
+    اضغط لاانشاء حساب
+</button>
+
+<script>
+
+function showPassword(id) {
+    const input = document.getElementById(id);
+
+    if (input.type === "password") {
+        input.type = "text";
+    } else {
+        input.type = "password";
+    }
+}
+
+function createAccount() {
+
+    const user = document.getElementById("theuserName").value;
+    const pass = document.getElementById("password").value;
+    const confirm = document.getElementById("confirmPassword").value;
+
+    if (pass !== confirm) {
+        alert("Passwords do not match");
+        return;
+    }
+
+    const userData = {
+        user: user,
+        pass: pass
+    };
+
+    localStorage.setItem("userData", JSON.stringify(userData));
+
+    alert("Account created successfully!");
+
+    window.location.href = "profile1.html";
+}
+
+</script>
+
+</body>
+</html>

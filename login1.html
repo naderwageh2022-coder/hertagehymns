@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+<body>
+
+<h1>تسجيل دخول</h1>
+
+<input type="text" id="theuserName" placeholder="اسم المستخدم">
+<br><br>
+
+<input type="password" id="password" placeholder="كلمة المرور">
+<br><br>
+
+<button onclick="login()">تسجيل دخول</button>
+
+<p id="error"></p>
+
+<script>
+function login() {
+
+    const user = document.getElementById("theuserName").value;
+    const pass = document.getElementById("password").value;
+
+    const savedData = JSON.parse(localStorage.getItem("userData"));
+
+    const error = document.getElementById("error");
+
+
+    if (!savedData) {
+        error.innerText = "No account found, please create account first";
+        return;
+    }
+
+
+    if (user === savedData.user && pass === savedData.pass) {
+
+        localStorage.setItem("loggedInUser", JSON.stringify(savedData));
+
+        window.location.href = "profile1.html";
+
+    } else {
+        error.innerText = "Wrong username or password";
+    }
+}
+</script>
+
+</body>
+</html>

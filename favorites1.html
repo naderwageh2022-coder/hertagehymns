@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="favorites1.css">
+    <title>favorites</title>
+</head>
+<body>
+<h1>
+كل المفضلة
+</h1>
+<center><input
+    type="text"
+    id="searchFav"
+    placeholder="ابحث عن ترنيمة..."
+    onkeyup="searchFavorites()"></center>
+<br>
+ <div class="favorites-container" id="favoritesList">
+
+    </div>
+
+    <a href="home page1.html" class="back-link">← Back to Hymns List</a>
+    <div style="height: 280px;"></div>
+
+<div id="fixedAudioContainer" class="fixed-audio-bar">
+    <div class="current-hymn-details">
+        <div class="song-info">
+            <div id="currentTitle" class="song-title" style="color: gold;">
+                اختار الترنيمة
+            </div>
+            <div id="currentSub" class="song-sub">
+                Orthodox Liturgical Music
+            </div>
+        </div>
+    </div>
+
+    <audio id="mainAudioPlayer" controls class="custom-audio">
+        <source id="audioSource" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+</div>
+
+<script src="script4.js"></script>
+</body>
+</html>

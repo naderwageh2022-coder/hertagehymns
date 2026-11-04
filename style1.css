@@ -1,0 +1,170 @@
+body{
+    background: white;
+    text-align: center;
+}
+
+img{
+    width: 400px;
+}
+
+h1{
+    color: #222;
+    font-size: 80px;
+}
+
+h2{
+    color: #0d6efd;
+}
+
+h3{
+    color: #222;
+}
+
+h4{
+    color: #444;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h5{
+    color: #0d6efd;
+}
+
+p{
+    color: #555;
+    font-size: 20px;
+}
+
+button{
+    background: gray;
+    color: white;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #0b5ed7;
+    color: white;
+}
+
+a{
+    color: transparent;
+}
+.img3{
+    width: 200px;
+    height: 200%;
+}
+@media (max-width: 992px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    img {
+        width: 300px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .img3 {
+        width: 170px;
+        height: auto;
+    }
+
+    p,
+    h4 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .img3 {
+        width: 140px;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 280px;
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    .img3 {
+        width: 120px;
+        height: auto;
+    }
+
+    button {
+        width: 95%;
+        font-size: 16px;
+    }
+}

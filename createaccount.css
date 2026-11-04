@@ -1,0 +1,100 @@
+body{
+    background: black;
+}
+table{
+    border: 1px solid gold;
+
+}
+input{
+    background: #705151;
+    border-style: none;
+    border-radius: 30px;
+    width: 400px;
+    height: 30px;
+    margin-left: 550px;
+}
+h1{
+    color: gold;
+    text-align: center;
+}
+button{
+    background: gold;
+    border-style: none;
+    border-radius: 15px;
+    margin-left: 690px;
+}
+a{
+    color: gold;
+}
+h3{
+    color: black;
+}
+@media (max-width: 992px) {
+    input {
+        width: 90%;
+        max-width: 400px;
+        margin: 15px auto;
+        display: block;
+    }
+
+    button {
+        display: block;
+        margin: 15px auto;
+    }
+
+    table {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        width: 95%;
+        max-width: 320px;
+        height: 42px;
+        font-size: 16px;
+        margin: 15px auto;
+        display: block;
+        text-align: center;
+    }
+
+    button {
+        width: 95%;
+        max-width: 320px;
+        padding: 12px;
+        margin: 15px auto;
+        display: block;
+        font-size: 16px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}

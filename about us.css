@@ -1,0 +1,80 @@
+*{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: black;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+h1{
+    color: gold;
+}
+h3{
+    color: white;
+}
+h2{
+    color: goldenrod;
+}
+.img2{
+    width: 300px;
+    height: 300px;
+    border: 1px solid gold;
+    border-radius: 100%;
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    img {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .img2 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .img2 {
+        width: 160px;
+        height: 160px;
+    }
+}

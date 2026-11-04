@@ -1,0 +1,330 @@
+body{
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: gold;
+}
+.playlist-box{
+    background: rgba(255,255,255,.1);
+    border:1px solid gold;
+    border-radius:15px;
+    margin:20px;
+    padding:20px;
+    color:white;
+}
+
+.songs-box{
+    margin-top:20px;
+}
+.hymn-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 250px;
+}
+.cover {
+    border-radius: 8px;
+    margin-right: 15px;
+}
+.song-info {
+    flex-grow: 1;
+    color: white;
+}
+.song-title { font-weight: bold; font-size: 16px; }
+.song-sub { font-size: 12px; color: #ccc; }
+.play-btn {
+    background: gold;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+.fixed-audio-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid gold; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 20px;
+    box-shadow: 0 -5px 25px rgba(0,0,0,0.3);
+    z-index: 9999; 
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    margin-left: 220px;
+    margin-right: 10px;
+}
+
+.current-hymn-details {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+
+.custom-audio {
+    width: 35%;
+}
+
+
+.bar-buttons {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.button-link, .button-fav {
+    color: gold; 
+    border: 1px solid gold;
+    padding: 10px 18px;
+    border-radius: 12px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; 
+    margin: 20px;
+}
+
+
+.button-link:hover {
+    background: gold;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 217, 0, 0.5);
+}
+
+
+.video-btn {
+    border-color: #ff4757;
+    color: #ff4757;
+    background: rgba(255, 71, 87, 0.15);
+}
+.video-btn:hover {
+    background: #ff4757;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+
+
+.button-fav {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ff4757;
+    border-color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+.button-fav:hover {
+    background: #ff4757;
+    color: white;
+    border-color: #ff4757;
+    transform: scale(1.1); 
+}
+.buttonlight{
+    background: darkslategrey;
+    border-style: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 1400px;
+}
+.buttonlight:hover {
+    background: white;
+    color: goldenrod;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+.button2{
+    background: gold;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 40px;
+
+}
+a{
+    color: gold;
+}
+.titlebutton{
+    color: black;
+}
+.delete-song{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff3b30;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.delete-song:hover{
+
+    background:#d70000;
+
+    transform:rotate(15deg);
+
+}
+@media (max-width: 992px) {
+    input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .hymn-item {
+        margin: 10px;
+    }
+
+    .fixed-audio-bar {
+        margin: 0;
+        border-radius: 0;
+        padding: 12px;
+    }
+
+    .custom-audio {
+        width: 50%;
+    }
+
+    .buttonlight {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        padding-bottom: 180px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        width: 95%;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .playlist-box {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .hymn-item {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .cover {
+        margin: 0 0 10px;
+        width: 100px;
+        height: auto;
+    }
+
+    .song-info {
+        margin-bottom: 10px;
+    }
+
+    .bar-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .button-link,
+    .play-btn,
+    .button2 {
+        width: 100%;
+        max-width: 280px;
+        margin: 5px auto;
+    }
+
+    .button-fav {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+
+    .fixed-audio-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .current-hymn-details {
+        justify-content: center;
+    }
+
+    .custom-audio {
+        width: 100%;
+    }
+
+    .buttonlight {
+        width: 45px;
+        height: 45px;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .song-title {
+        font-size: 15px;
+    }
+
+    .song-sub {
+        font-size: 12px;
+    }
+
+    .cover {
+        width: 80px;
+    }
+
+    .playlist-box {
+        padding: 12px;
+    }
+
+    .fixed-audio-bar {
+        padding: 8px;
+    }
+}

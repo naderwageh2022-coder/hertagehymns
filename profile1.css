@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#profile{
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    #profile {
+        width: 90%;
+        max-width: 320px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #profile {
+        width: 95%;
+        padding: 15px;
+    }
+}
